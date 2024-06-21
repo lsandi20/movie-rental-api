@@ -11,8 +11,8 @@ import { RentalsService } from './rentals.service';
 import { CreateRentalDto } from './dto/create-rental.dto';
 import { UpdateRentalDto } from './dto/update-rental.dto';
 
-@Controller('rentals')
-export class RentalsController {
+@Controller('admin/rentals')
+export class RentalsAdminController {
   constructor(private readonly rentalsService: RentalsService) {}
 
   @Post()
